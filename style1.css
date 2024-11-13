@@ -1,0 +1,22 @@
+#fig1 img{
+    width:100%;
+
+}
+#fig1{
+    float:right;
+    width: 300px;
+    
+}
+.javaBeg p::first-letter{
+    color: burlywood;
+    font-weight: bold;
+}
+#fig2{
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    
+}
+figcaption{
+    size: 2px;
+}

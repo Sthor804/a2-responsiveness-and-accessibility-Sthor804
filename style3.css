@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9; /* Added a background color for better contrast */
+}
+
+fieldset {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    margin: 8px 0 4px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+textarea {
+    resize: none; /* Prevents resizing of the textarea */
+}
+
+button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #6c757d; /* Default button color */
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #5a6268; /* Darker shade for hover effect */
+}
+
+button[type="reset"] {
+    background-color: #6c757d; /* Reset button color */
+}
+
+button[type="reset"]:hover {
+    background-color: #5a6268; /* Darker shade for hover effect */
+}

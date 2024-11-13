@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Contact Form, ProgNotes, Python, Programming Resources, Learning">
+    <meta name="description" content="Contact Us form page">
+    <meta name="author" content="Mahum Khan and Samantha Thornton">
+    <title>ProgNotes | Python</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style3.css">
+     
+</head>
+
+<body>
+    <header>
+        <h1>ProgNotes - Your Quick Programming Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Page 1.html">Java</a></li>
+                <li><a href="Page 2.html">Python</a></li>
+                <li><a class = "active" href="Page 3.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <title>Contact Us Form</title>
+    
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form id="form_one" method="post" action="mailto:mkhan988@mtroyal.ca" >
+        <!-- Salutation -->
+        <label for="salutation">Salutation:</label>
+        <select id="salutation" name="salutation" required>
+            <option value="">Select</option>
+            <option value="Mr">Mr.</option>
+            <option value="Ms">Ms.</option>
+            <option value="Dr">Dr.</option>
+            <option value="Prof">Prof.</option>
+        </select>
+
+        <!-- First Name -->
+        <dt><label for="First">First Name:</label></dt>
+        <dd><input type="Name" id="First" name="First" required></dd>
+
+        <!-- Last Name -->
+        <dt><label for="lastName">Last Name:</label></dt>
+        <dd><input type="text" id="lastName" name="lastName" required></dd>
+
+        <!-- Phone Number -->
+        <dt><label for="phone">Phone Number:</label></dt>
+        <dd>
+            <input type="tel" id="phone" name="phone" required placeholder="123-456-7890" 
+                   pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"></dd>
+
+        <!-- Email -->
+        <dt><label for="email">Email:</label></dt>
+        <dd>
+            <input type="email" id="email" name="email" required placeholder="example@example.com" 
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </dd>
+
+        <!-- Subject -->
+        <dt><label for="subject">Subject:</label></dt>
+        <dd><input type="text" id="subject" name="subject" required></dd>
+
+        <!-- Message -->
+        <dt><label for="body">Message /How can we improve:</label></dt>
+        <dd><textarea id="body" name="body" rows="5" required></textarea></dd>
+    </dl>
+
+    <!-- Radio Buttons: Preferred Contact Method -->
+    <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label><input type="radio" name="contactMethod" value="Email" required> Email</label>
+        <label><input type="radio" name="contactMethod" value="Phone"> Phone</label>
+    </fieldset>
+
+    <!-- Checkboxes: Interests -->
+    <fieldset>
+        <legend>Interests</legend>
+        <label><input type="checkbox" name="interests" value="Python"> Python</label>
+        <label><input type="checkbox" name="interests" value="Java"> JavaScript</label>
+        <label><input type="checkbox" name="interests" value="Other" required> Other</label>
+        <dd><input type="text" id="otherInterest" name="otherInterest" placeholder="Please specify your other interest">
+    </fieldset>
+
+    <!-- Submit and Reset Buttons -->
+    <input type="submit">
+    <input type="reset">
+</form>
+
+    </body>
+</html>
