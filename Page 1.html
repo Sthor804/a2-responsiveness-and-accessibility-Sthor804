@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="keywords" content="Java, Programming, Learning, Quicknotes">
+        <meta name="description" content="Java referencing page ">
+        <meta name="author" content="Mahum Khan and Samantha Thornton">
+        <title>ProgNotes | Java</title>
+
+        <link rel= "stylesheet" href="css/style.css" >
+        <link rel= "stylesheet" href="css/style1.css" >
+        <link rel= "stylesheet" href="css/style2.css" >
+
+    </head>
+
+    <body>
+
+      <header>
+
+            <h1>ProgNotes - Your Quick Programming Guide </h1>
+    
+        <nav>
+            <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a class = "active" href="Page 1.html"> Java </a></li>
+            <li><a href="Page 2.html"> Python </a></li>
+            <li><a href="Page 3.html"> Contact Us </a></li>
+            </ul>
+
+        </nav>
+      </header>
+
+      <h1>The Java Reference Guide </h1>
+      <article >
+        <section class = javaBeg>
+            <p>Java was developed by James Gosling and his team at Sun Microsystems in the early 1990s, initially as part of the "Green Project," which aimed to create a platform-independent language for programming consumer electronics. Released in 1995, Java quickly gained popularity due to its “write once, run anywhere” philosophy, achieved through the Java Virtual Machine (JVM), which allowed Java code to run on any device with a compatible JVM.
+                <br>
+                The first official version, Java 1.0, was revolutionary in offering automatic memory management, built-in support for network programming, and a security model that made it ideal for web applets. In the late 1990s and early 2000s, Java saw widespread adoption in enterprise software with the introduction of Java 2 (J2EE), which added robust frameworks and APIs for web and server-side development. 
+                <br>
+                In 2006, Sun Microsystems made Java open-source, further accelerating its adoption and contributions from the developer community. Oracle acquired Sun Microsystems in 2010, becoming the steward of Java and continuing its development. Since then, Java has seen regular updates, with a switch to a faster release cycle in 2017, enabling more frequent and incremental improvements. Today, Java remains one of the world’s most widely used programming languages, integral to web, mobile, enterprise, and IoT applications.</p>
+        </section>
+
+        <h2>Getting Started With Java</h2>
+
+        <article class="GettingStartedWithJava">
+        <figure id="fig1">
+            <img src="images/JavaEclipse.png" alt="Creating a Java project on Eclipse IDE">
+            <figcaption>Creating a new java project in Eclpise IDE</figcaption>
+        </figure>
+        <section>
+
+        <ul>
+            
+                <li><strong>Download and Install Java:</strong></li>
+                <ul>
+                    <li>Go to the Java Oracle website and download <a href="https://www.oracle.com/ca-en/java/technologies/downloads/#jdk23-windows" target="_blank">the latest version</a>.</li>
+                    <li>Follow the installers prompts</li>
+                <ul>
+           
+        
+            <li>
+                <strong>Download and Install Eclipse:</strong>
+                <ol>
+                    <li>Go to the <a href="https://eclipseide.org/" target="_blank">Eclipse IDE website</a> and download the installer for your operating system.</li>
+                    <li>Run the installer and follow the prompts to complete the installation.</li>
+                </ol>
+            </li>
+
+            <li>
+                <strong>Set Up a Java File:</strong>
+                <ol>
+                    <li>Launch Eclipse and navigate to the main workspace.</li>
+                    <li>Go to File > New > Java Project</li>
+                    <li>Enter a project name (e.g., MyFirstProject) and click Finish.</li>
+                    <li>Right-click on your src folder or within your package.</li>
+                    <li>Select New > Class.</li>
+                    <li>Enter a class name (e.g., HelloWorld).</li>
+                    <li>Optionally, check the box to include a public static void main(String[] args) method.</li>
+                    <li>Click Finish to create the class file.</li>
+                </ol>
+            </li>
+            <li>
+                <strong>Run Your Code:</strong>
+                <ol>
+                    <li>Write some Python code in the file (for example, <code>print("Hello, World!")</code>).</li>
+                    <li>Right-click in the editor and choose <em>Run Python File in Terminal</em> to see the output in the terminal at the bottom.</li>
+                </ol>
+            </li> 
+        </ul>
+
+        <p>Once you've completed these steps, you'll be set up to write and execute Java code in Eclipse!</p>
+    </section>
+    </article>
+    
+
+    <h3>Quick notes and examples</h3>
+    <article class="QuickNotesAndExamples">
+    <section>
+        <h4>1. Variables & Data Types: Variables store data. There are many types of Variables in Java.</h4>
+        <table border="1">
+            <thead>
+            <th colspan="3"><strong>Primitive Data Types</strong></th>
+            </thead>
+            <tr>
+                <td>Data Type</td>
+                <td>Java reference</td>
+                <td>Example</td>
+            </tr>
+            <tr>
+                <td>String</td>
+                <td>str</td>
+                <td>hello</td>
+            </tr>
+            <tr>
+                <td>Integer</td>
+                <td>int</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Float</td>
+                <td>float</td>
+                <td>5.5</td>
+            </tr>
+            <tr>
+                <td>Double</td>
+                <td>double</td>
+                <td>10.99</td>
+            </tr>
+            <tr>
+                <td>Character</td>
+                <td>char</td>
+                <td>'A-Z' to 'a-z'</td>
+            </tr>
+            <tr>
+                <td>Boolean</td>
+                <td>boolean</td>
+                <td>True or False</td>
+            </tr>
+
+        </table>
+
+            <p><strong>Types of Variables</strong></p>
+            <ul>
+                <li>Local Variables: Declared within a method or block and only accessible there.</li>
+                <li>Instance Variables (Non-static fields): Declared within a class but outside any method. Each instance of the class has its own copy.</li>
+                <li>Class Variables (Static fields): Declared with the static keyword. Shared among all instances of the class.</li>
+            </ul>
+
+        <h4>2. Data Structures</h4>
+        <ul>
+            <li><strong>Arrays</strong>: Fixed-size data structure that stores elements of the same type in contiguous memory locations.
+                <pre><code>
+                    int[] arr = new int[5];       // Declaration with size
+                    int[] arr2 = {1, 2, 3, 4, 5}; // Declaration with initialization                    
+                </code></pre>
+            </li>
+            <li><strong>ArrayList</strong>: A resizable array, part of the Java Collections Framework.
+                <pre><code>
+                    ArrayList<Integer> list = new ArrayList<>();
+                        list.add(1);
+                        list.add(2);                        
+                </code></pre>
+            </li>
+            <li><strong>Linked List</strong>: Doubly linked list implementation of List and Deque interfaces.
+                <pre><code>
+                    LinkedList<String> linkedList = new LinkedList<>();
+                        linkedList.add("Alice");
+                        linkedList.add("Bob");                        
+                </code></pre>
+            </li>
+            <li><strong>Stack</strong>:  Last In, First Out (LIFO) data structure, part of the Java Collections Framework.
+                <pre><code>
+                    Stack<Integer> stack = new Stack<>();
+                        stack.push(10);
+                        stack.push(20);
+                        stack.pop();                        
+                </code></pre>
+            </li>
+            <li><strong>Queue</strong>:  First In, First Out (FIFO) data structure, implemented via LinkedList.
+                <pre><code>
+                    Queue<String> queue = new LinkedList<>();
+                        queue.add("Alice");
+                        queue.add("Bob");
+                        queue.poll();                        
+                </code></pre>
+            </li>
+            <li><strong>Priority Queue</strong>: A queue where elements are ordered based on priority.
+                <pre><code>
+                    PriorityQueue<Integer> pq = new PriorityQueue<>();
+                        pq.add(30);
+                        pq.add(20);
+                        pq.poll(); // Removes smallest element by default
+                        
+                </code></pre>
+            </li>
+            <li><strong>HashMap</strong>: Stores key-value pairs; part of the Java Collections Framework.
+                <pre><code>
+                    HashMap<String, Integer> map = new HashMap<>();
+                    map.put("Alice", 30);
+                    map.put("Bob", 25);                    
+                </code></pre>
+            </li>
+            <li><strong>TreeMap</strong>: A map that stores key-value pairs in a sorted order (by natural order or comparator).
+                <pre><code>
+                    TreeMap<String, Integer> treeMap = new TreeMap<>();
+                    treeMap.put("Alice", 30);
+                    treeMap.put("Bob", 25);                                      
+                </code></pre>
+            </li>
+            <li><strong>HashSet</strong>: Implements the Set interface; a collection of unique elements
+                <pre><code>
+                    HashSet<String> set = new HashSet<>();
+                        set.add("Apple");
+                        set.add("Banana");                                          
+                </code></pre>
+            </li>
+            <li><strong>TreeSet</strong>:  A sorted, unique set implementation.
+                <pre><code>
+                    TreeSet<Integer> treeSet = new TreeSet<>();
+                        treeSet.add(10);
+                        treeSet.add(20);                                           
+                </code></pre>
+            </li>
+        
+        </ul>
+
+        <h4>3. Conditionals: Use <code>if</code>, <code>else if</code>, and <code>else</code> to create decision-making structures.</h4>
+        <pre><code>
+            int score = 85;
+            if (score >= 90) {
+                System.out.println("Grade A");
+            } else if (score >= 80) {
+                System.out.println("Grade B");
+            } else {
+                System.out.println("Grade C");
+            }
+        </code></pre>
+
+        <h4>4. Loops</h4>
+        <ul>
+            <li><strong>For loop</strong> Used when the number of iterations is known.
+
+                <pre><code>
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println("Iteration: " + i);
+                    }                    
+                </code></pre>
+            </li>
+            <li><strong>Enhanced For loop</strong> Simplified loop for iterating over arrays or collections.
+
+                <pre><code>
+                    for (int i = 0; i < 5; i++) {
+                        System.out.println("Iteration: " + i);
+                    }                    
+                </code></pre>
+            </li>
+            <li><strong>While loop</strong> Used when the number of iterations isn’t known in advance; runs while the condition is true
+                <pre><code>
+                    int i = 0;
+                    while (i < 5) {
+                        System.out.println("Count: " + i);
+                        i++;
+                    }                    
+                </code></pre>
+            </li>
+            <li><strong>Do-While</strong> Simplified loop for iterating over arrays or collections.
+
+                <pre><code>
+                    int i = 0;
+                    do {
+                        System.out.println("Count: " + i);
+                        i++;
+                    } while (i < 5);                                    
+                </code></pre>
+            </li>
+        </ul>
+
+        <h4>5. Methods </h4>
+        <p>In Java, functions are referred to as **methods**, which are blocks of code within a class designed to perform specific tasks. A method's structure includes a return type, a method name, and any parameters needed for its operation. To declare a method, you specify its return type (e.g., `int`, `String`, or `void` if it returns nothing) followed by the method name and any parameters in parentheses. For example, `public int add(int a, int b)` defines a method named `add` that takes two integer parameters and returns an integer. To call a method, you use the method's name along with required arguments, like `obj.add(5, 10)` where `obj` is an instance of the class containing the method.
+            Java methods can return a value using the `return` statement, or they can have a `void` return type, indicating they perform an action but don’t return data. Java also supports **method overloading**, which allows multiple methods to have the same name but different parameter lists. This enables methods to perform similar tasks with varying inputs. Methods can also be **static**, meaning they belong to the class itself rather than an instance, allowing you to call them without creating an object. Static methods are useful for operations that don’t require object-specific data, such as `Math.sqrt()` in the standard library. 
+            In practice, methods allow Java programs to be organized into reusable, readable, and modular pieces, enhancing code maintenance and reusability. For instance, a simple `Calculator` class can have methods for addition, multiplication, or any other operations, which can be called as needed in a structured and logical way.</p>
+        <pre><code>
+            public class Rectangle {
+                // Method to calculate the area of a rectangle
+                public int calculateArea(int width, int height) {
+                    return width * height;
+                }
+            
+                public static void main(String[] args) {
+                    // Creating an instance of Rectangle
+                    Rectangle rect = new Rectangle();
+            
+                    // Calling the calculateArea method with width and height
+                    int area = rect.calculateArea(5, 10);
+            
+                    // Printing the result
+                    System.out.println("The area of the rectangle is: " + area);
+                }
+            }            
+        </code></pre>
+
+        <h4>6. Classes & Objects</h4>
+        <p>Object-oriented programming with classes.</p>
+        <p>In Java, a class serves as a blueprint for creating objects, defining the attributes (fields) and behaviors (methods) that objects of that class will have. A class might have fields to represent an object’s data (like a person’s name and age) and methods to define actions the object can perform. For example, a class Person could have fields for name and age, and a method introduce that prints a greeting. Classes also contain constructors, special methods used to initialize objects when they’re created. A constructor shares the same name as the class and has no return type, helping to set up the initial state of the object’s fields.
+
+            Objects are instances of a class, created using the new keyword, and each object has its own set of field values that can be modified independently of other objects. For example, an instance of Person created with Person person1 = new Person(); can have its name and age fields set individually. Once created, we can access the object’s fields and methods using the dot . operator, such as person1.introduce().</p>
+        <pre><code>
+            public class Person {
+                // Fields (attributes)
+                String name;
+                int age;
+            
+                // Constructor
+                public Person(String name, int age) {
+                    this.name = name;
+                    this.age = age;
+                }
+            
+                // Method (behavior)
+                public void introduce() {
+                    System.out.println("Hello, my name is " + name + " and I am " + age + " years old.");
+                }
+            
+                public static void main(String[] args) {
+                    // Creating an object of the Person class
+                    Person person1 = new Person("Alice", 25);
+                    person1.introduce();  // Outputs: Hello, my name is Alice and I am 25 years old.
+                }
+            }
+            
+        </code></pre>
+
+        <h4>7. File Handling</h4>
+        <ul>
+            <li><p><strong>Writing to a file</strong></p></li>
+            <pre><code>
+                import java.io.FileWriter;
+                import java.io.PrintWriter;
+                import java.io.IOException;
+                
+                public class WriteToFileExample {
+                    public static void main(String[] args) {
+                        String fileName = "example.txt"; // File to write to
+                        String content = "Hello, this is a test file!"; // Content to write
+                
+                        // Try-with-resources to ensure FileWriter and PrintWriter are closed automatically
+                        try (FileWriter fileWriter = new FileWriter(fileName);
+                             PrintWriter printWriter = new PrintWriter(fileWriter)) {
+                             
+                            // Write content to the file
+                            printWriter.println(content);
+                            System.out.println("Successfully wrote to the file: " + fileName);
+                            
+                        } catch (IOException e) {
+                            System.out.println("An error occurred while writing to the file.");
+                            e.printStackTrace();
+                        }
+                    }
+                }                
+            </code></pre>
+            <li><p><strong>Reading from a file</strong></p></li>
+            <pre><code>
+                import java.io.FileReader;
+                import java.io.BufferedReader;
+                import java.io.IOException;
+            
+                public class ReadFromFileExample {
+                public static void main(String[] args) {
+                    String fileName = "example.txt"; // File to read from
+            
+                    // Try-with-resources to ensure FileReader and BufferedReader are closed automatically
+                    try (FileReader fileReader = new FileReader(fileName);
+                         BufferedReader bufferedReader = new BufferedReader(fileReader)) {
+            
+                        String line;
+                        while ((line = bufferedReader.readLine()) != null) {
+                            System.out.println(line); // Print each line
+                        }
+            
+                    } catch (IOException e) {
+                        System.out.println("An error occurred while reading the file.");
+                        e.printStackTrace();
+                    }
+                }
+            }            
+            </code><pre>
+        </ul>
+
+        <h4>8. Modules & Libraries</h4>
+        <p>In Java, modules represent a group of related packages and resources bundled together, promoting modular programming, a feature introduced in Java 9. Modules improve code organization, encapsulation, and dependency management, making applications more scalable and maintainable. A module is defined in a `module-info.java` file, where you can specify the module's dependencies using the `requires` keyword and declare which packages are accessible to other modules using the `exports` keyword. For example, a module named `MyModule` might require the `java.sql` module and export a specific package like `com.mycompany.myapp`. 
+            On the other hand, **libraries** in Java are pre-written collections of classes and methods designed to handle common tasks such as data manipulation, networking, and I/O operations. Libraries help accelerate development by providing reusable code. They can be categorized into **standard libraries**, which are part of the Java Standard Library (JDK) and include packages like `java.util` and `java.io`, and **external libraries**, which are created by third parties, such as Apache Commons, Google Guava, and Gson. To use these libraries, you can import the required packages directly for standard libraries, while external libraries can be included as dependencies through build tools like Maven or Gradle. For instance, in a Maven project, you can specify an external library like Gson in the `pom.xml` file. 
+            Build tools like **Maven** and **Gradle** simplify dependency management, allowing developers to specify libraries in configuration files, thereby streamlining the build process. With these tools, Java developers can create organized, reusable, and scalable applications that leverage both modularization and a wide array of libraries to enhance functionality and efficiency.</p>
+        <pre><code>
+            package com.example.json;
+
+            import com.google.gson.Gson;
+            
+            public class JsonConverter {
+                private Gson gson = new Gson();
+            
+                // Converts an object to JSON
+                public String convertToJson(Object obj) {
+                    return gson.toJson(obj);
+                }
+            
+                // Converts JSON back to an object
+                public <T> T convertFromJson(String json, Class<T> clazz) {
+                    return gson.fromJson(json, clazz);
+                }
+            }            
+        </code></pre>
+
+        <h4>9. Error Handling</h4>
+        <p><strong>Exception Handling</strong>: Exception handling is a mechanism to manage runtime errors, allowing the program to continue executing rather than terminating abruptly.</p>
+        <ul>
+            <li><strong>Checked Exceptions</strong></li>
+            <p>These are checked at compile-time (e.g., IOException, SQLException). The compiler requires these to be handled or declared in the method signature.</p>
+            <li><strong>Unchecked Exceptions</strong></li>
+            <p>These are not checked at compile-time (e.g., NullPointerException, ArrayIndexOutOfBoundsException). They occur at runtime and are usually the result of programming errors.</p>
+        </ul>
+        <p>Handle by using a <strong>Try-Catch-Finally</strong> block</p>
+        <pre><code>
+            try {
+                // Code that may throw an exception
+            } catch (Exception e) {
+                // Handle exception
+            } finally {
+                System.out.println("This block always executes.");
+            }            
+        </code></pre>
+        <p>Handle by using Throwing Exceptions</p>
+        <pre><code>
+            public void checkAge(int age) {
+                if (age < 18) {
+                    throw new IllegalArgumentException("Age must be at least 18.");
+                }
+            }
+            
+        </code></pre>
+    </section>
+    </article>
+
+    <article>
+        <section>
+          <h2>Some Interesting Implementations of Java</h2>
+          <p>Java is a versatile programming language known for its portability, scalability, and robust performance. One interesting implementation is the use of Java in enterprise-level applications, where frameworks like Spring and Java EE enable the development of complex, distributed systems. These frameworks support microservices architecture, allowing businesses to create modular applications that can scale easily. Additionally, Java is widely used in Android app development, providing a solid foundation for mobile applications. Its strong presence in big data technologies is another noteworthy aspect, with tools like Apache Hadoop and Apache Spark leveraging Java for handling large datasets efficiently. A well-known application that utilizes Java is LinkedIn, the professional networking site, which employs Java in its backend to manage user data and interactions, showcasing the language's capability to handle high-traffic, data-intensive environments.</p>
+          <p>A popular app that is coded in Java is LinkedIn. The professional networking platform uses Java extensively for its backend services, allowing it to efficiently handle millions of users and their interactions. This robust implementation helps LinkedIn maintain performance and scalability as it continues to grow.</p>
+            <figure id="fig2">
+                <img src="images/Linkden.png" alt="An image of the Linkden career page">
+                <figcaption>This is the Linkden career page. The backend of this page is programmed in Java</figcaption>
+            </figure>
+            
+
+        </section>
+      </article>
+
+
+      <footer>
+        <p><a href="index.html"> Home</a> | <a href="Page 3.html"> Contact Us</a></p>
+        <p><em>Copyright &copy; 2024 ProgNotes</em></p>
+      </footer>
+
+    </body>
+</html>

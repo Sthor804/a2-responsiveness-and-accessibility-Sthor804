@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Python, Programming, Learning, Quicknotes">
+    <meta name="description" content="Python referencing page">
+    <meta name="author" content="Mahum Khan and Samantha Thornton">
+    <title>ProgNotes | Python</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+
+<body>
+    <header>
+        <h1>ProgNotes - Your Quick Programming Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Page 1.html">Java</a></li>
+                <li><a class="active" href="Page 2.html">Python</a></li>
+                <li><a href="Page 3.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h1>The Python Reference Guide</h1>
+    <article class="pythonBeginning">
+        <section> 
+            Python is a high-level, interpreted programming language known for its simplicity and readability, making it a popular choice for beginners and experienced developers alike. Created by Guido van Rossum in the late 1980s, Python emphasizes clean, readable code and supports multiple programming paradigms, including procedural, object-oriented, and functional programming. With its extensive standard library and a large ecosystem of frameworks and libraries, Python is versatile, used in web development, data analysis, artificial intelligence, automation, and more. Its supportive community and vast resources make it an accessible and powerful tool for a wide range of applications. 
+        </section>
+
+        <h2>Getting Started with Python</h2>
+        <article class="GettingStartedWithPython">
+        <section>
+            <ol>
+                <li>
+                    <strong>Download and Install Python:</strong>
+                    <ul>
+                        <li>Go to the Python website and download the latest version.</li>
+                        <ul>
+                        <li><a href="https://www.python.org/downloads/" target="_blank">latest version</a> </li>
+                    </ul>
+                        <li>Run the installer, and ensure you check the box "Add Python to PATH" before installation.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Download and Install VS Code:</strong>
+                    <ul>
+                        <li>Go to the VS Code website and download the installer for your operating system.</li>
+                        <li>Run the installer and follow the prompts to complete the installation.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Install the Python Extension in VS Code:</strong>
+                    <ul>
+                        <li>Open VS Code and go to the Extensions view (click on the square icon in the sidebar or press Ctrl+Shift+X).</li>
+                        <li>Search for "Python" by Microsoft, and click Install.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Set Up a Python File:</strong>
+                    <ul>
+                        <li>Open or create a new Python file in VS Code by selecting <em>File &gt; New File</em> and saving it with a <code>.py</code> extension.</li>
+                        <li>Select your Python interpreter by clicking on the version number at the bottom left of VS Code and choosing your installed Python version.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Run Your Code:</strong>
+                    <ul>
+                        <li>Write some Python code in the file (for example, <code>print("Hello, World!")</code>).</li>
+                        <li>Right-click in the editor and choose <em>Run Python File in Terminal</em> to see the output in the terminal at the bottom.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Once you've completed these steps, you'll be set up to write and execute Python code in VS Code!</p>
+        </section>
+        
+
+        <figure id="fig2">
+            <img src="images/PythonVSCode.jpeg" alt="imposrting the Java language">
+            <figcaption>Creating a new Python project in VS Code</figcaption>
+        </figure>
+
+        <h3>Quick notes and examples</h3>
+        <article class="QuickNotesAndExamples">
+            <p>1. Variables & Data Types: Variables store data, and types can be inferred.</p>
+            <table border="1">
+                <thead>
+                <th colspan="3"><strong>Primitive Data Types</strong></th>
+                </thead>
+                <tr>
+                    <td>Data Type</td>
+                    <td>Python reference</td>
+                    <td>Example</td>
+                </tr>
+                <tr>
+                    <td>String</td>
+                    <td>str</td>
+                    <td>name = "Alice"</td>
+                </tr>
+                <tr>
+                    <td>Integer</td>
+                    <td>int</td>
+                    <td>age = 25</td>
+                </tr>
+                <tr>
+                    <td>Float</td>
+                    <td>float</td>
+                    <td>height = 5.6</td>
+                </tr>
+                <tr>
+                    <td>Boolean</td>
+                    <td>bool</td>
+                    <td>is_student = True </td>
+                </tr>
+    
+            </table>
+    
+            <p> <strong> 2. Basic Data Structures</p></strong>
+            <ul>
+                <li><strong>Lists</strong>: Ordered, mutable collections.
+                    <pre><code>
+                fruits = ["apple", "banana", "cherry"]
+                    </code></pre>
+                </li>
+                <li><strong>Tuples</strong>: Ordered, immutable collections.
+                    <pre><code>
+                coordinates = (10, 20)
+                    </code></pre>
+                </li>
+                <li><strong>Dictionaries</strong>: Key-value pairs.
+                    <pre><code>
+                student = {"name": "Alice", "age": 25}
+                    </code></pre>
+                </li>
+                <li><strong>Sets</strong>: Unordered, unique elements.
+                    <pre><code>
+                unique_numbers = {1, 2, 3, 4}
+                    </code></pre>
+                </li>
+            </ul>
+    
+            <p><strong>  3. Conditionals:</strong> Use <code>if</code>, <code>elif</code>, and <code>else</code> to create decision-making structures.</p>
+            <pre><code>
+                 if age > 18:
+                    print("Adult")
+                 elif age == 18:
+                  print("Just turned adult")
+                 else:
+                      print("Minor")
+            </code></pre>
+    
+            <p><strong>4. Loops</strong></p>
+            <ul>
+                <li><strong>For </strong>loop to iterate over a sequence.
+                    <pre><code>
+            for fruit in fruits:
+                print(fruit)
+                    </code></pre>
+                </li>
+                <li><strong>While </strong> loop for repeated execution based on a condition.
+                    <pre><code>
+    count = 5
+    while count > 0:
+        print(count)
+        count -= 1
+                    </code></pre>
+                </li>
+            </ul>
+    
+            <p><strong> 5. Functions</p></strong>
+            <p>In Python, methods are functions that are defined inside classes and are associated with objects. Methods allow you to perform actions using data contained within an object. They’re useful for implementing behaviors and operations within a class, which can be invoked by calling them on instances of the class.</p>
+            <pre><code>
+    def greet(name):
+        return f"Hello, {name}!"
+    
+    print(greet("Alice"))
+            </code></pre>
+    
+            <p><strong> 6. Classes & Objects</p></strong>
+            <p> 
+In Python, classes and objects are fundamental concepts in object-oriented programming (OOP). A class is like a blueprint that defines the structure and behavior of an object, including attributes (variables) and methods (functions). Classes encapsulate data and behaviors, allowing for organized and reusable code.
+
+An object is an instance of a class, created using the class blueprint. Each object has its own set of data (attributes) defined by the class but can interact with other objects and methods independently. Objects enable you to model real-world entities with attributes that describe their characteristics and methods that define their behavior.
+
+</p>
+            <p>Object-oriented programming with classes.</p>
+            <pre><code>
+    class Dog:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+        
+        def bark(self):
+            return "Woof!"
+    
+    my_dog = Dog("Buddy", 3)
+    print(my_dog.bark())
+            </code></pre>
+    
+            <p><strong>7. File Handling</p></strong> 
+            <p>Reading and writing files.</p>
+            <pre><code>
+    # Writing to a file
+    with open("example.txt", "w") as file:
+        file.write("Hello, World!")
+    
+    # Reading from a file
+    with open("example.txt", "r") as file:
+        print(file.read())
+            </code></pre>
+    
+            <p><strong>8. Modules and Libaries </p></strong> 
+            <p>Import modules to extend Python’s functionality.</p>
+            <pre><code>
+    import math
+    print(math.sqrt(16))
+            </code></pre>
+
+            <p><strong>9. Error Handling</p></strong> 
+            <p>Use <code>try-except</code> for error management.</p>
+            <pre><code>
+    try:
+        result = 10 / 0
+    except ZeroDivisionError:
+        print("Cannot divide by zero")
+            </code></pre>
+        </article>
+       
+        
+        <p>
+            Python is a versatile language used across various fields, from web development to data science. 
+            This page covers Python basics and how to set up a project in VS Code. 
+            You can <a href="https://www.python.org/downloads/" target="_blank">download Python here</a> 
+            and <a href="https://code.visualstudio.com/" target="_blank">download VS Code here</a>.
+        </p>
+    </article>
+
+    <footer>
+        <p><a href="index.html"> Home</a> | <a href="Page 3.html"> Contact Us</a></p>
+        <p><em>Copyright &copy; 2024 ProgNotes</em></p>
+      </footer>
+</body>
+</html>
